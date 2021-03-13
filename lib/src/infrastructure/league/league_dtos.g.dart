@@ -8,13 +8,11 @@ part of 'league_dtos.dart';
 
 _$_LeagueDto _$_$_LeagueDtoFromJson(Map<String, dynamic> json) {
   return _$_LeagueDto(
-    name: json['name'] as String,
-    logo: json['logo'] as String,
-    cost: json['cost'] as String,
-    description: json['description'] as String,
-    region: json['region'] as String,
-    serverTimeStamp:
-        const ServerTimestampConverter().fromJson(json['serverTimeStamp']),
+    name: json['name'] as String?,
+    logo: json['logo'] as String?,
+    cost: json['cost'] as String?,
+    description: json['description'] as String?,
+    region: json['region'] as String?,
   );
 }
 
@@ -25,6 +23,4 @@ Map<String, dynamic> _$_$_LeagueDtoToJson(_$_LeagueDto instance) =>
       'cost': instance.cost,
       'description': instance.description,
       'region': instance.region,
-      'serverTimeStamp':
-          const ServerTimestampConverter().toJson(instance.serverTimeStamp),
     };

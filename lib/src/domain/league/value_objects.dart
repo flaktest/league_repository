@@ -6,8 +6,7 @@ class LeagueName extends ValueObject<String> {
   final Either<ValueFailure<String>, String> value;
 
   factory LeagueName(String input) {
-    assert(input != null);
-    return LeagueName._(
+    return LeagueName?._(
       validateMaxStringLength(input, 30),
     );
   }
@@ -20,8 +19,7 @@ class LeagueLogo extends ValueObject<String> {
   final Either<ValueFailure<String>, String> value;
 
   factory LeagueLogo(String input) {
-    assert(input != null);
-    return LeagueLogo._(
+    return LeagueLogo?._(
       validateMaxStringLength(input, 200),
     );
   }
@@ -34,8 +32,7 @@ class LeagueDescription extends ValueObject<String> {
   final Either<ValueFailure<String>, String> value;
 
   factory LeagueDescription(String input) {
-    assert(input != null);
-    return LeagueDescription._(
+    return LeagueDescription?._(
       validateMaxStringLength(input, 1000),
     );
   }
@@ -48,8 +45,7 @@ class LeagueRegion extends ValueObject<String> {
   final Either<ValueFailure<String>, String> value;
 
   factory LeagueRegion(String input) {
-    assert(input != null);
-    return LeagueRegion._(
+    return LeagueRegion?._(
       validateMaxStringLength(input, 200),
     );
   }
@@ -62,8 +58,7 @@ class LeagueCost extends ValueObject<String> {
   final Either<ValueFailure<String>, String> value;
 
   factory LeagueCost(String input) {
-    assert(input != null);
-    return LeagueCost._(
+    return LeagueCost?._(
       validateMaxStringLength(input, 200),
     );
   }

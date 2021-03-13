@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'league.dart';
 
@@ -9,18 +9,20 @@ part of 'league.dart';
 
 T _$identity<T>(T value) => value;
 
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 /// @nodoc
 class _$LeagueTearOff {
   const _$LeagueTearOff();
 
-// ignore: unused_element
   _League call(
-      {@required UniqueId id,
-      @required LeagueName name,
-      @required LeagueLogo logo,
-      @required LeagueCost cost,
-      @required LeagueDescription description,
-      @required LeagueRegion region}) {
+      {UniqueId? id,
+      LeagueName? name,
+      LeagueLogo? logo,
+      LeagueCost? cost,
+      LeagueDescription? description,
+      LeagueRegion? region}) {
     return _League(
       id: id,
       name: name,
@@ -33,19 +35,19 @@ class _$LeagueTearOff {
 }
 
 /// @nodoc
-// ignore: unused_element
 const $League = _$LeagueTearOff();
 
 /// @nodoc
 mixin _$League {
-  UniqueId get id;
-  LeagueName get name;
-  LeagueLogo get logo;
-  LeagueCost get cost;
-  LeagueDescription get description;
-  LeagueRegion get region;
+  UniqueId? get id => throw _privateConstructorUsedError;
+  LeagueName? get name => throw _privateConstructorUsedError;
+  LeagueLogo? get logo => throw _privateConstructorUsedError;
+  LeagueCost? get cost => throw _privateConstructorUsedError;
+  LeagueDescription? get description => throw _privateConstructorUsedError;
+  LeagueRegion? get region => throw _privateConstructorUsedError;
 
-  $LeagueCopyWith<League> get copyWith;
+  @JsonKey(ignore: true)
+  $LeagueCopyWith<League> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -53,12 +55,12 @@ abstract class $LeagueCopyWith<$Res> {
   factory $LeagueCopyWith(League value, $Res Function(League) then) =
       _$LeagueCopyWithImpl<$Res>;
   $Res call(
-      {UniqueId id,
-      LeagueName name,
-      LeagueLogo logo,
-      LeagueCost cost,
-      LeagueDescription description,
-      LeagueRegion region});
+      {UniqueId? id,
+      LeagueName? name,
+      LeagueLogo? logo,
+      LeagueCost? cost,
+      LeagueDescription? description,
+      LeagueRegion? region});
 }
 
 /// @nodoc
@@ -71,22 +73,38 @@ class _$LeagueCopyWithImpl<$Res> implements $LeagueCopyWith<$Res> {
 
   @override
   $Res call({
-    Object id = freezed,
-    Object name = freezed,
-    Object logo = freezed,
-    Object cost = freezed,
-    Object description = freezed,
-    Object region = freezed,
+    Object? id = freezed,
+    Object? name = freezed,
+    Object? logo = freezed,
+    Object? cost = freezed,
+    Object? description = freezed,
+    Object? region = freezed,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed ? _value.id : id as UniqueId,
-      name: name == freezed ? _value.name : name as LeagueName,
-      logo: logo == freezed ? _value.logo : logo as LeagueLogo,
-      cost: cost == freezed ? _value.cost : cost as LeagueCost,
+      id: id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as UniqueId?,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as LeagueName?,
+      logo: logo == freezed
+          ? _value.logo
+          : logo // ignore: cast_nullable_to_non_nullable
+              as LeagueLogo?,
+      cost: cost == freezed
+          ? _value.cost
+          : cost // ignore: cast_nullable_to_non_nullable
+              as LeagueCost?,
       description: description == freezed
           ? _value.description
-          : description as LeagueDescription,
-      region: region == freezed ? _value.region : region as LeagueRegion,
+          : description // ignore: cast_nullable_to_non_nullable
+              as LeagueDescription?,
+      region: region == freezed
+          ? _value.region
+          : region // ignore: cast_nullable_to_non_nullable
+              as LeagueRegion?,
     ));
   }
 }
@@ -97,12 +115,12 @@ abstract class _$LeagueCopyWith<$Res> implements $LeagueCopyWith<$Res> {
       __$LeagueCopyWithImpl<$Res>;
   @override
   $Res call(
-      {UniqueId id,
-      LeagueName name,
-      LeagueLogo logo,
-      LeagueCost cost,
-      LeagueDescription description,
-      LeagueRegion region});
+      {UniqueId? id,
+      LeagueName? name,
+      LeagueLogo? logo,
+      LeagueCost? cost,
+      LeagueDescription? description,
+      LeagueRegion? region});
 }
 
 /// @nodoc
@@ -116,22 +134,38 @@ class __$LeagueCopyWithImpl<$Res> extends _$LeagueCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object id = freezed,
-    Object name = freezed,
-    Object logo = freezed,
-    Object cost = freezed,
-    Object description = freezed,
-    Object region = freezed,
+    Object? id = freezed,
+    Object? name = freezed,
+    Object? logo = freezed,
+    Object? cost = freezed,
+    Object? description = freezed,
+    Object? region = freezed,
   }) {
     return _then(_League(
-      id: id == freezed ? _value.id : id as UniqueId,
-      name: name == freezed ? _value.name : name as LeagueName,
-      logo: logo == freezed ? _value.logo : logo as LeagueLogo,
-      cost: cost == freezed ? _value.cost : cost as LeagueCost,
+      id: id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as UniqueId?,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as LeagueName?,
+      logo: logo == freezed
+          ? _value.logo
+          : logo // ignore: cast_nullable_to_non_nullable
+              as LeagueLogo?,
+      cost: cost == freezed
+          ? _value.cost
+          : cost // ignore: cast_nullable_to_non_nullable
+              as LeagueCost?,
       description: description == freezed
           ? _value.description
-          : description as LeagueDescription,
-      region: region == freezed ? _value.region : region as LeagueRegion,
+          : description // ignore: cast_nullable_to_non_nullable
+              as LeagueDescription?,
+      region: region == freezed
+          ? _value.region
+          : region // ignore: cast_nullable_to_non_nullable
+              as LeagueRegion?,
     ));
   }
 }
@@ -139,32 +173,21 @@ class __$LeagueCopyWithImpl<$Res> extends _$LeagueCopyWithImpl<$Res>
 /// @nodoc
 class _$_League extends _League {
   const _$_League(
-      {@required this.id,
-      @required this.name,
-      @required this.logo,
-      @required this.cost,
-      @required this.description,
-      @required this.region})
-      : assert(id != null),
-        assert(name != null),
-        assert(logo != null),
-        assert(cost != null),
-        assert(description != null),
-        assert(region != null),
-        super._();
+      {this.id, this.name, this.logo, this.cost, this.description, this.region})
+      : super._();
 
   @override
-  final UniqueId id;
+  final UniqueId? id;
   @override
-  final LeagueName name;
+  final LeagueName? name;
   @override
-  final LeagueLogo logo;
+  final LeagueLogo? logo;
   @override
-  final LeagueCost cost;
+  final LeagueCost? cost;
   @override
-  final LeagueDescription description;
+  final LeagueDescription? description;
   @override
-  final LeagueRegion region;
+  final LeagueRegion? region;
 
   @override
   String toString() {
@@ -200,33 +223,35 @@ class _$_League extends _League {
       const DeepCollectionEquality().hash(description) ^
       const DeepCollectionEquality().hash(region);
 
+  @JsonKey(ignore: true)
   @override
   _$LeagueCopyWith<_League> get copyWith =>
       __$LeagueCopyWithImpl<_League>(this, _$identity);
 }
 
 abstract class _League extends League {
-  const _League._() : super._();
   const factory _League(
-      {@required UniqueId id,
-      @required LeagueName name,
-      @required LeagueLogo logo,
-      @required LeagueCost cost,
-      @required LeagueDescription description,
-      @required LeagueRegion region}) = _$_League;
+      {UniqueId? id,
+      LeagueName? name,
+      LeagueLogo? logo,
+      LeagueCost? cost,
+      LeagueDescription? description,
+      LeagueRegion? region}) = _$_League;
+  const _League._() : super._();
 
   @override
-  UniqueId get id;
+  UniqueId? get id => throw _privateConstructorUsedError;
   @override
-  LeagueName get name;
+  LeagueName? get name => throw _privateConstructorUsedError;
   @override
-  LeagueLogo get logo;
+  LeagueLogo? get logo => throw _privateConstructorUsedError;
   @override
-  LeagueCost get cost;
+  LeagueCost? get cost => throw _privateConstructorUsedError;
   @override
-  LeagueDescription get description;
+  LeagueDescription? get description => throw _privateConstructorUsedError;
   @override
-  LeagueRegion get region;
+  LeagueRegion? get region => throw _privateConstructorUsedError;
   @override
-  _$LeagueCopyWith<_League> get copyWith;
+  @JsonKey(ignore: true)
+  _$LeagueCopyWith<_League> get copyWith => throw _privateConstructorUsedError;
 }

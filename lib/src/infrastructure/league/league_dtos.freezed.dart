@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'league_dtos.dart';
 
@@ -8,6 +8,10 @@ part of 'league_dtos.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 LeagueDto _$LeagueDtoFromJson(Map<String, dynamic> json) {
   return _LeagueDto.fromJson(json);
 }
@@ -16,15 +20,17 @@ LeagueDto _$LeagueDtoFromJson(Map<String, dynamic> json) {
 class _$LeagueDtoTearOff {
   const _$LeagueDtoTearOff();
 
-// ignore: unused_element
   _LeagueDto call(
-      {@JsonKey(ignore: true) String id,
-      @required String name,
-      @required String logo,
-      @required String cost,
-      @required String description,
-      @required String region,
-      @required @ServerTimestampConverter() FieldValue serverTimeStamp}) {
+      {@JsonKey(ignore: true)
+          String? id,
+      String? name,
+      String? logo,
+      String? cost,
+      String? description,
+      String? region,
+      @JsonKey(ignore: true)
+      @ServerTimestampConverter()
+          FieldValue? serverTimeStamp}) {
     return _LeagueDto(
       id: id,
       name: name,
@@ -36,30 +42,31 @@ class _$LeagueDtoTearOff {
     );
   }
 
-// ignore: unused_element
   LeagueDto fromJson(Map<String, Object> json) {
     return LeagueDto.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $LeagueDto = _$LeagueDtoTearOff();
 
 /// @nodoc
 mixin _$LeagueDto {
   @JsonKey(ignore: true)
-  String get id;
-  String get name;
-  String get logo;
-  String get cost;
-  String get description;
-  String get region;
+  String? get id => throw _privateConstructorUsedError;
+  String? get name => throw _privateConstructorUsedError;
+  String? get logo => throw _privateConstructorUsedError;
+  String? get cost => throw _privateConstructorUsedError;
+  String? get description => throw _privateConstructorUsedError;
+  String? get region => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
   @ServerTimestampConverter()
-  FieldValue get serverTimeStamp;
+  FieldValue? get serverTimeStamp => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
-  $LeagueDtoCopyWith<LeagueDto> get copyWith;
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $LeagueDtoCopyWith<LeagueDto> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -67,13 +74,16 @@ abstract class $LeagueDtoCopyWith<$Res> {
   factory $LeagueDtoCopyWith(LeagueDto value, $Res Function(LeagueDto) then) =
       _$LeagueDtoCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(ignore: true) String id,
-      String name,
-      String logo,
-      String cost,
-      String description,
-      String region,
-      @ServerTimestampConverter() FieldValue serverTimeStamp});
+      {@JsonKey(ignore: true)
+          String? id,
+      String? name,
+      String? logo,
+      String? cost,
+      String? description,
+      String? region,
+      @JsonKey(ignore: true)
+      @ServerTimestampConverter()
+          FieldValue? serverTimeStamp});
 }
 
 /// @nodoc
@@ -86,25 +96,43 @@ class _$LeagueDtoCopyWithImpl<$Res> implements $LeagueDtoCopyWith<$Res> {
 
   @override
   $Res call({
-    Object id = freezed,
-    Object name = freezed,
-    Object logo = freezed,
-    Object cost = freezed,
-    Object description = freezed,
-    Object region = freezed,
-    Object serverTimeStamp = freezed,
+    Object? id = freezed,
+    Object? name = freezed,
+    Object? logo = freezed,
+    Object? cost = freezed,
+    Object? description = freezed,
+    Object? region = freezed,
+    Object? serverTimeStamp = freezed,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed ? _value.id : id as String,
-      name: name == freezed ? _value.name : name as String,
-      logo: logo == freezed ? _value.logo : logo as String,
-      cost: cost == freezed ? _value.cost : cost as String,
-      description:
-          description == freezed ? _value.description : description as String,
-      region: region == freezed ? _value.region : region as String,
+      id: id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String?,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      logo: logo == freezed
+          ? _value.logo
+          : logo // ignore: cast_nullable_to_non_nullable
+              as String?,
+      cost: cost == freezed
+          ? _value.cost
+          : cost // ignore: cast_nullable_to_non_nullable
+              as String?,
+      description: description == freezed
+          ? _value.description
+          : description // ignore: cast_nullable_to_non_nullable
+              as String?,
+      region: region == freezed
+          ? _value.region
+          : region // ignore: cast_nullable_to_non_nullable
+              as String?,
       serverTimeStamp: serverTimeStamp == freezed
           ? _value.serverTimeStamp
-          : serverTimeStamp as FieldValue,
+          : serverTimeStamp // ignore: cast_nullable_to_non_nullable
+              as FieldValue?,
     ));
   }
 }
@@ -116,13 +144,16 @@ abstract class _$LeagueDtoCopyWith<$Res> implements $LeagueDtoCopyWith<$Res> {
       __$LeagueDtoCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(ignore: true) String id,
-      String name,
-      String logo,
-      String cost,
-      String description,
-      String region,
-      @ServerTimestampConverter() FieldValue serverTimeStamp});
+      {@JsonKey(ignore: true)
+          String? id,
+      String? name,
+      String? logo,
+      String? cost,
+      String? description,
+      String? region,
+      @JsonKey(ignore: true)
+      @ServerTimestampConverter()
+          FieldValue? serverTimeStamp});
 }
 
 /// @nodoc
@@ -136,25 +167,43 @@ class __$LeagueDtoCopyWithImpl<$Res> extends _$LeagueDtoCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object id = freezed,
-    Object name = freezed,
-    Object logo = freezed,
-    Object cost = freezed,
-    Object description = freezed,
-    Object region = freezed,
-    Object serverTimeStamp = freezed,
+    Object? id = freezed,
+    Object? name = freezed,
+    Object? logo = freezed,
+    Object? cost = freezed,
+    Object? description = freezed,
+    Object? region = freezed,
+    Object? serverTimeStamp = freezed,
   }) {
     return _then(_LeagueDto(
-      id: id == freezed ? _value.id : id as String,
-      name: name == freezed ? _value.name : name as String,
-      logo: logo == freezed ? _value.logo : logo as String,
-      cost: cost == freezed ? _value.cost : cost as String,
-      description:
-          description == freezed ? _value.description : description as String,
-      region: region == freezed ? _value.region : region as String,
+      id: id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String?,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      logo: logo == freezed
+          ? _value.logo
+          : logo // ignore: cast_nullable_to_non_nullable
+              as String?,
+      cost: cost == freezed
+          ? _value.cost
+          : cost // ignore: cast_nullable_to_non_nullable
+              as String?,
+      description: description == freezed
+          ? _value.description
+          : description // ignore: cast_nullable_to_non_nullable
+              as String?,
+      region: region == freezed
+          ? _value.region
+          : region // ignore: cast_nullable_to_non_nullable
+              as String?,
       serverTimeStamp: serverTimeStamp == freezed
           ? _value.serverTimeStamp
-          : serverTimeStamp as FieldValue,
+          : serverTimeStamp // ignore: cast_nullable_to_non_nullable
+              as FieldValue?,
     ));
   }
 }
@@ -165,38 +214,33 @@ class __$LeagueDtoCopyWithImpl<$Res> extends _$LeagueDtoCopyWithImpl<$Res>
 class _$_LeagueDto implements _LeagueDto {
   _$_LeagueDto(
       {@JsonKey(ignore: true) this.id,
-      @required this.name,
-      @required this.logo,
-      @required this.cost,
-      @required this.description,
-      @required this.region,
-      @required @ServerTimestampConverter() this.serverTimeStamp})
-      : assert(name != null),
-        assert(logo != null),
-        assert(cost != null),
-        assert(description != null),
-        assert(region != null),
-        assert(serverTimeStamp != null);
+      this.name,
+      this.logo,
+      this.cost,
+      this.description,
+      this.region,
+      @JsonKey(ignore: true) @ServerTimestampConverter() this.serverTimeStamp});
 
   factory _$_LeagueDto.fromJson(Map<String, dynamic> json) =>
       _$_$_LeagueDtoFromJson(json);
 
   @override
   @JsonKey(ignore: true)
-  final String id;
+  final String? id;
   @override
-  final String name;
+  final String? name;
   @override
-  final String logo;
+  final String? logo;
   @override
-  final String cost;
+  final String? cost;
   @override
-  final String description;
+  final String? description;
   @override
-  final String region;
+  final String? region;
   @override
+  @JsonKey(ignore: true)
   @ServerTimestampConverter()
-  final FieldValue serverTimeStamp;
+  final FieldValue? serverTimeStamp;
 
   @override
   String toString() {
@@ -236,6 +280,7 @@ class _$_LeagueDto implements _LeagueDto {
       const DeepCollectionEquality().hash(region) ^
       const DeepCollectionEquality().hash(serverTimeStamp);
 
+  @JsonKey(ignore: true)
   @override
   _$LeagueDtoCopyWith<_LeagueDto> get copyWith =>
       __$LeagueDtoCopyWithImpl<_LeagueDto>(this, _$identity);
@@ -248,34 +293,39 @@ class _$_LeagueDto implements _LeagueDto {
 
 abstract class _LeagueDto implements LeagueDto {
   factory _LeagueDto(
-          {@JsonKey(ignore: true) String id,
-          @required String name,
-          @required String logo,
-          @required String cost,
-          @required String description,
-          @required String region,
-          @required @ServerTimestampConverter() FieldValue serverTimeStamp}) =
-      _$_LeagueDto;
+      {@JsonKey(ignore: true)
+          String? id,
+      String? name,
+      String? logo,
+      String? cost,
+      String? description,
+      String? region,
+      @JsonKey(ignore: true)
+      @ServerTimestampConverter()
+          FieldValue? serverTimeStamp}) = _$_LeagueDto;
 
   factory _LeagueDto.fromJson(Map<String, dynamic> json) =
       _$_LeagueDto.fromJson;
 
   @override
   @JsonKey(ignore: true)
-  String get id;
+  String? get id => throw _privateConstructorUsedError;
   @override
-  String get name;
+  String? get name => throw _privateConstructorUsedError;
   @override
-  String get logo;
+  String? get logo => throw _privateConstructorUsedError;
   @override
-  String get cost;
+  String? get cost => throw _privateConstructorUsedError;
   @override
-  String get description;
+  String? get description => throw _privateConstructorUsedError;
   @override
-  String get region;
+  String? get region => throw _privateConstructorUsedError;
   @override
+  @JsonKey(ignore: true)
   @ServerTimestampConverter()
-  FieldValue get serverTimeStamp;
+  FieldValue? get serverTimeStamp => throw _privateConstructorUsedError;
   @override
-  _$LeagueDtoCopyWith<_LeagueDto> get copyWith;
+  @JsonKey(ignore: true)
+  _$LeagueDtoCopyWith<_LeagueDto> get copyWith =>
+      throw _privateConstructorUsedError;
 }

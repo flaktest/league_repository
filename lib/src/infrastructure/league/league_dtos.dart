@@ -5,25 +5,27 @@ part 'league_dtos.freezed.dart';
 part 'league_dtos.g.dart';
 
 @freezed
-abstract class LeagueDto with _$LeagueDto {
+class LeagueDto with _$LeagueDto {
   factory LeagueDto({
-    @JsonKey(ignore: true) String id,
-    @required String name,
-    @required String logo,
-    @required String cost,
-    @required String description,
-    @required String region,
-    @required @ServerTimestampConverter() FieldValue serverTimeStamp,
+    @JsonKey(ignore: true) String? id,
+    @required String? name,
+    @required String? logo,
+    @required String? cost,
+    @required String? description,
+    @required String? region,
+    @JsonKey(ignore: true)
+    @ServerTimestampConverter()
+        FieldValue? serverTimeStamp,
   }) = _LeagueDto;
 
   factory LeagueDto.fromDomain(League league) {
     return LeagueDto(
-      id: league.id.getOrCrash(),
-      logo: league.logo.getOrCrash(),
-      cost: league.cost.getOrCrash(),
-      name: league.name.getOrCrash(),
-      description: league.description.getOrCrash(),
-      region: league.region.getOrCrash(),
+      id: league.id?.getOrCrash(),
+      logo: league.logo?.getOrCrash(),
+      cost: league.cost?.getOrCrash(),
+      name: league.name?.getOrCrash(),
+      description: league.description?.getOrCrash(),
+      region: league.region?.getOrCrash(),
       serverTimeStamp: FieldValue.serverTimestamp(),
     );
   }
@@ -38,12 +40,12 @@ abstract class LeagueDto with _$LeagueDto {
 extension LeagueDtoX on LeagueDto {
   League toDomain() {
     return League(
-      cost: LeagueCost(cost),
+      cost: LeagueCost(cost!),
       id: UniqueId(),
-      logo: LeagueLogo(logo),
-      name: LeagueName(name),
-      description: LeagueDescription(description),
-      region: LeagueRegion(region),
+      logo: LeagueLogo(logo!),
+      name: LeagueName(name!),
+      description: LeagueDescription(description!),
+      region: LeagueRegion(region!),
     );
   }
 }
