@@ -33,7 +33,7 @@ class LeagueDto with _$LeagueDto {
       _$LeagueDtoFromJson(json);
 
   factory LeagueDto.fromFirestore(DocumentSnapshot doc) {
-    return LeagueDto.fromJson(doc.data()).copyWith(id: doc.id);
+    return LeagueDto.fromJson(doc.data()!).copyWith(id: doc.id);
   }
 }
 

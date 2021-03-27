@@ -25,7 +25,8 @@ Either<ValueFailure<int>, int> validateNumberIsNAN(int input) {
   }
 }
 
-Either<ValueFailure<String>, String> validateStringNotEmpty(String input) {
+Either<ValueFailure<String>, String> validateStringNotEmpty(
+    String input) {
   if (input.isEmpty) {
     return left(ValueFailure.empty(failedValue: input));
   } else {
@@ -41,7 +42,8 @@ Either<ValueFailure<String>, String> validateStringNotEmpty(String input) {
 //   }
 // }
 
-Either<ValueFailure<String>, String> validateSingleLine(String input) {
+Either<ValueFailure<String>, String> validateSingleLine(
+    String input) {
   if (input.contains('\n')) {
     return left(ValueFailure.multiline(failedValue: input));
   } else {
@@ -61,7 +63,8 @@ Either<ValueFailure<List<T>>, List<T>> validateMaxListLength<T>(
   }
 }
 
-Either<ValueFailure<String>, String> validateEmailAddress(String input) {
+Either<ValueFailure<String>, String> validateEmailAddress(
+    String input) {
   // Maybe not the most robust way of email validation but it's good enough
   const emailRegex =
       r"""^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+""";
@@ -95,30 +98,25 @@ Either<ValueFailure<String>, String> validateGamerTag(String input) {
   }
 }
 
-Either<ValueFailure<DateTime>, DateTime> validateBirthdate(DateTime input) {
+Either<ValueFailure<DateTime>, DateTime> validateBirthdate(
+    DateTime input) {
   int today = DateTime.now().year;
   int bday = input.year;
   int yearDiff = today - bday;
   if (yearDiff <= 13) {
     return left(ValueFailure.underAge(failedValue: input));
-  } else if (input == null) {
-    return left(ValueFailure.empty(failedValue: input));
   } else {
     return right(input);
   }
 }
 
-Either<ValueFailure<String>, String> validateMatchDateTime(String input) {
-  if (input == null) {
-    input = DateTime.now().toIso8601String();
-    return right(input);
-  } else {
-    return right(input);
-  }
+Either<ValueFailure<String>, String> validateMatchDateTime(
+    String input) {
+  return right(input);
 }
 
-Either<ValueFailure<DocumentReference>, DocumentReference> validateDocRef(
-    DocumentReference input) {
+Either<ValueFailure<DocumentReference>, DocumentReference>
+    validateDocRef(DocumentReference input) {
   // if (input == null) {
   //   return left(ValueFailure.empty(failedValue: input));
   // } else {
